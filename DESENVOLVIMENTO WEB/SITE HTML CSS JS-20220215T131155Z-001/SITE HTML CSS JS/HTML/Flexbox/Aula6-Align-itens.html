@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align itens</title>
+
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: aliceblue;
+            text-align: center;
+            margin-bottom: 10px;
+            flex: 1;
+        }
+        
+        .flex {
+            flex: 1;
+        }
+        
+        .start {
+            align-items: flex-start;
+        }
+        
+        .end {
+            align-items: flex-end;
+        }
+        
+        .Strecth {
+            align-items: stretch;
+        }
+        
+        .center {
+            align-items: center;
+        }
+        
+        .baseline {
+            align-items: baseline;
+        }
+        
+        .column {
+            flex-direction: column;
+        }
+        
+        .central {
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .central .item {
+            /* se liga nesse . apos o primeiro é pra zera*/
+            flex: 0;
+            padding: 20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linhas</h1>
+    <!--Respeita o bottom e top-->>
+    <p>align-items center</p>
+    <section class="container  center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+
+    <!--Strecth FAZ COM QUE OS ITEM CRESCAM COM O MAIRO ITEM DENTRO DE UM CONTAINER
+    E ELES NAO VAO QUEBRAR, VAO SE ORGANIZAR DE ACORDO IGUALMENTE COM O MAIOR -->
+    <p>Strecth</p>
+    <section class="container Strecth">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+    <!--
+        alinha de acordo com o primeiro e depois
+        orienta aumentando.
+    -->
+    <P>FLEX START</P>
+    <section class="container start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+
+    <!--
+        ao inverso do start, o crescimneto respeita
+        de baixo pra cima.
+
+    -->
+    <P>FLEX END</P>
+    <section class="container end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+    <!--
+
+    baseline alinha de acordo com a linha 
+    e cresce de acordo com ela depois
+
+    -->
+    <p>base line</p>
+    <section class="container  baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+
+    <h1>Colunas</h1>
+    <h2>se eu ultilizar reverse, faz tudo reverso tambem</h2>
+    <p>align-items center</p>
+    <section class="container column  center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+
+    <!--Strecth FAZ COM QUE OS ITEM CRESCAM COM O MAIRO ITEM DENTRO DE UM CONTAINER
+    E ELES NAO VAO QUEBRAR, VAO SE ORGANIZAR DE ACORDO IGUALMENTE COM O MAIOR -->
+    <p>Strecth</p>
+    <section class="container Strecth column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+    <!--
+        alinha de acordo com o primeiro e depois
+        orienta aumentando.
+    -->
+    <P>FLEX START</P>
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+
+    <!--
+        ao inverso do start, o crescimneto respeita
+        de baixo pra cima.
+
+    -->
+    <P>FLEX END</P>
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+    <!--
+
+    baseline alinha de acordo com a linha 
+    e cresce de acordo com ela depois
+
+    -->
+    <p>base line</p>
+    <section class="container baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais muito texto aleatorio e gigante texto</div>
+    </section>
+
+    <p>CENTRO CENTRAL</p>
+    <section class="container center central">
+
+        <div class="item">Lorem sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet ipsum dolor sit amet</div>
+
+    </section>
+
+</body>
+
+</html>

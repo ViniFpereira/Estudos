@@ -1,0 +1,36 @@
+.navbar {
+    background-color: rgba(7, 15, 24, 0.733);
+}
+
+.fundo {
+    background-color: rgba(83, 81, 81, 0.418);
+}
+
+.ldireito {
+    right: 0;
+    float: left;
+    position: absolute;
+}
+
+.tamanho {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 2000px
+}
+
+.FontUl {
+    font-size: 35px;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:700px) {
+    .centered {
+        width: 100%;
+    }
+    .centered #img_logo {
+        width: 90%;
+        margin: 0 auto;
+        /* centraliza */
+    }
+}

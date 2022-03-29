@@ -1,0 +1,161 @@
+h1{
+    color: forestgreen;
+
+}
+
+/* GERAL */
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* barra de navegação */
+nav {
+
+    background-color:rgb(34, 33, 36);
+    border-bottom: 3px solid #1ab7d3;
+    height: 50px;
+}
+#LOGO{
+
+    color:white;
+    font-size: 30px;
+    font-weight:  bold; /* negrito*/
+    text-decoration: none; /* tira a linha debaixo do texto*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#MENU{
+
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+
+}
+.ITEM{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ITEM a{
+
+    text-decoration: none;
+    color:white;   
+}
+
+.ITEM a:hover{
+
+    color:wheat;
+    transition: .5s;
+}
+#p1{
+
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+#rel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    text-align-last: center;
+    background-color: black;
+
+}
+#p1{
+
+    position:absolute;
+    top: 25%;
+    left: 5%;
+    font-family: Orbitron;
+    font-size: 30px;
+}
+#p2{
+
+    position:absolute;
+    top: 40%;
+    left: 70%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+#lua{
+    margin: 0 auto;
+    position:absolute;
+    top: 7%;
+    left: 40%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+#div1{
+    margin: 0 auto;
+    position:absolute;
+    top: 80%;
+    left: 70%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+#tartaruga{
+    margin: 0 auto;
+    position:absolute;
+    top: 84%;
+    left: 86.7%;
+    font-family: Orbitron;
+    font-size: 20px;
+    max-width: 400px;
+    max-height: 120px;
+}
+#divVini{
+    margin: 0 auto;
+    position:absolute;
+    top: 20%;
+    left: 70%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+#VINICIUS{
+    margin: 0 auto;
+    position:left;
+    top: 200;
+    left: 10.7%;
+    font-family: Orbitron;
+    font-size: 20px;
+    max-width: 400px;
+    max-height: 320px;
+    float: inline-start
+}
+#sobre{
+    text-decoration: none;
+    position:absolute;
+    top: 15%;
+    right: 5%;
+    left: 5%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+#sobre1{
+
+    position:absolute;
+    top: 170%;
+    right: 5%;
+    left: 5%;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+.pro a{
+
+    text-decoration: none;
+    color:rgb(24, 22, 22);   
+}
+
+.pro a:hover{
+
+    color:rgb(16, 82, 43);
+    transition: .5s;
+}
