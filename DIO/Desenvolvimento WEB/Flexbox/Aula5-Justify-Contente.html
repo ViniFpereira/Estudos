@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fundamentos - justify Content </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+        .container {
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .item {
+            background-color: brown;
+            margin: 5px;
+            text-align: center;
+            color: antiquewhite;
+        }
+        /*inicia no começo*/
+        
+        .flex-start {
+            justify-content: flex-start;
+        }
+        /*inicia no final*/
+        
+        .flex-end {
+            justify-content: flex-end;
+        }
+        /*inicia no centro*/
+        
+        .Center {
+            justify-content: center;
+        }
+        /*inicia com margem respeitando igual*/
+        
+        .Space-between {
+            justify-content: space-between;
+        }
+        /*cria um espaãmento maior no final e incio*/
+        
+        .Space-arround {
+            justify-content: space-around;
+        }
+        
+        .column {
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>flex-start</p>
+    <section class="container  flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Flex-End</p>
+    <section class="container  flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Flex-Center</p>
+    <section class="container Center">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+    <p>Space-between</p>
+    <section class="container Space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+    <p>Space-arround</p>
+    <section class="container Space-arround">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+
+    <h1>Column</h1>
+    <!--- TUDO EM COLUNA -->
+    <p>flex-start Column</p>
+    <section class="container column flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Flex-End Column</p>
+    <section class="container column flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Flex-Center Column</p>
+    <section class="container column Center">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+    <p>Space-between Column</p>
+    <section class="container column Space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+    <p>Space-arround Column</p>
+    <section class="container column Space-arround">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">Centro</div>
+        <div class="item">outro item</div>
+        <div class="item">outro final</div>
+    </section>
+</body>
+
+</html>

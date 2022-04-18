@@ -1,0 +1,82 @@
+.flex-container{
+        display: flex;
+        height: 200px;
+        border: 2px solid black;
+        max-width: 300px;
+        flex-direction: column-reverse;
+}   
+
+.item{
+    font-size: 24px;
+    height: 100%;
+    text-align: center;
+    min-width:100px;
+    height: 100px;
+    
+}
+.nowrap{
+
+    flex-wrap: nowrap;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.wrap-reverse{
+
+    flex-wrap: wrap-reverse;
+
+}
+.blue{
+    background-color: blue;
+    animation-name: azul;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.red{
+    background-color: red;
+    animation-name: vermelho;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+.green{
+    background-color: rgb(78, 255, 8);
+    animation-name: verde;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.orange{
+    background-color: rgb(255, 178, 13);
+    animation-name: laranja;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes azul {
+    0%   {background-color:rgb(0, 217, 255); left:0px; top:0px;}
+    25%  {background-color:rgb(135, 166, 207); left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:rgb(126, 181, 226); left:0px; top:200px;}
+    100% {background-color: blue; left:0px; top:0px;}
+  }
+  @keyframes vermelho {
+    0%   {background-color:rgb(236, 85, 65); left:0px; top:0px;}
+    25%  {background-color:rgb(255, 11, 2); left:200px; top:0px;}
+    50%  {background-color:rgb(211, 42, 42); left:200px; top:200px;}
+    75%  {background-color:rgb(255, 143, 143); left:0px; top:200px;}
+    100% {background-color: rgb(255, 51, 0); left:0px; top:0px;}
+  }
+  @keyframes verde {
+    0%   {background-color:rgb(15, 204, 15); left:0px; top:0px;}
+    25%  {background-color:rgb(127, 209, 95); left:200px; top:0px;}
+    50%  {background-color:rgb(1, 141, 8); left:200px; top:200px;}
+    75%  {background-color:rgb(182, 243, 164); left:0px; top:200px;}
+    100% {background-color: rgb(164, 243, 140); left:0px; top:0px;}
+  }
+  @keyframes laranja {
+    0%   {background-color:rgb(233, 161, 27); left:0px; top:0px;}
+    25%  {background-color:rgb(240, 135, 37); left:200px; top:0px;}
+    50%  {background-color:rgb(255, 153, 0); left:200px; top:200px;}
+    75%  {background-color:rgb(226, 163, 126); left:0px; top:200px;}
+    100% {background-color: rgb(255, 145, 0); left:0px; top:0px;}
+  }

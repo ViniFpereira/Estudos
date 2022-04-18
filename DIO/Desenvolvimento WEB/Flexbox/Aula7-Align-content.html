@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+
+    <style>
+        .container {
+            /* precisar ser maior que a linha*/
+            height: 450px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        
+        .item {
+            background-color: orange;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+        
+        .stretch {
+            align-content: stretch;
+        }
+        
+        .center {
+            align-content: center;
+        }
+        
+        .start {
+            align-content: flex-start;
+        }
+        
+        .end {
+            align-content: flex-end;
+        }
+        
+        .around {
+            align-content: space-around;
+        }
+        
+        .between {
+            align-content: space-between;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Stretch
+
+    </p>
+    <div class="container stretch">
+        <div class="item">Lorem, co elit. </div>
+        <div class="item">Sodiot vitae malesuada. Donec pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nullaque amagna</div>
+        <div class="item">lobort lacinia ut, pretium id ric imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue etra purus </div>
+        <div class="item">sullis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem iolor sit amet, co elit. </div>
+        <div class="item">Sodioc pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nulla feras luctus ante tristique aviverra vitae. In magna magna</div>
+        <div class="item">lobort lacinia uc imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue cectetur usce vehicula mi elit, non pharetra purus </div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Maulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+    <p>flex start</p>
+    <div class="container start">
+        <div class="item">Lorem iolor sit amet, co elit. </div>
+        <div class="item">Sodioc pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nulla feras luctus ante tristique aviverra vitae. In magna magna</div>
+        <div class="item">lobort lacinia uc imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue cectetur usce vehicula mi elit, non pharetra purus </div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Maulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+    <p>flex end</p>
+    <div class="container end">
+        <div class="item">Lorem iolor sit amet, co elit. </div>
+        <div class="item">Sodioc pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nulla feras luctus ante tristique aviverra vitae. In magna magna</div>
+        <div class="item">lobort lacinia uc imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue cectetur usce vehicula mi elit, non pharetra purus </div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Maulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+
+    <p>Space arround</p>
+    <div class="container arround">
+        <div class="item">Lorem iolor sit amet, co elit. </div>
+        <div class="item">Sodioc pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nulla feras luctus ante tristique aviverra vitae. In magna magna</div>
+        <div class="item">lobort lacinia uc imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue cectetur usce vehicula mi elit, non pharetra purus </div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Maulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+
+    <p>Space between</p>
+    <div class="container between">
+        <div class="item">Lorem iolor sit amet, co elit. </div>
+        <div class="item">Sodioc pretium ligula massa, quis fermentum lectus malesuada id</div>
+        <div class="item">Nulla feras luctus ante tristique aviverra vitae. In magna magna</div>
+        <div class="item">lobort lacinia uc imperdiet maximus. Mauris a nulla velit.</div>
+        <div class="item">ugue cectetur usce vehicula mi elit, non pharetra purus </div>
+        <div class="item">sus. Mauris convallis pulvinar gravida. Aliquam viverra imperdiet nun</div>
+        <div class="item">sus. Maulvinar gravida. Aliquam viverra imperdiet nun</div>
+    </div>
+
+</body>
+
+</html>

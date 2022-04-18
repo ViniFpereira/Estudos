@@ -1,0 +1,79 @@
+<!DOCKTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align-item - </title>
+    <style>
+        .flex-container {
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        
+        .items {
+            background-color: rgb(235, 143, 212);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .Acenter {
+            align-self: center;
+        }
+        
+        .Astart {
+            align-self: flex-start;
+        }
+        
+        .Aend {
+            align-self: flex-end;
+        }
+        
+        .Abaseline {
+            align-self: baseline;
+        }
+        
+        .Astrecht {
+            align-self: stretch;
+        }
+        
+        .Aauto {
+            align-self: auto;
+        }
+        
+        .Acentro {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>"flex-container alignitens"</p>
+    <section class="flex-container  Acentro">
+
+        <div class="items auto">AAA</div>
+        <div class="items auto">132</div>
+        <div class="items auto ">JUS aaaa aaaa aaaa aaaa aaaa a a aa a aaaaaaaOA</div>
+        <div class="items auto ">item 4</div>
+
+    </section>
+    <p>"flex-container alignitens geral "</p>
+    <section class="flex-container ">
+
+        <div class="items Acenter ">item 1</div>
+        <div class="items Astart ">item2</div>
+        <div class="items Astrecht">JUS aaaa aaaaJUS aaaa aaaa aaaa aaaa aaaa a a aa a aaaaaaaOA aaaa aaaa aaaa a a aa a aaaaaaaOA</div>
+        <div class="items Aend">item 4</div>
+
+
+    </section>
+</body>
+
+</html>
